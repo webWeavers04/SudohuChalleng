@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="prompt">
+        <h1>Can you defeat me?</h1>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <div class="sudoku-container" id="challenge">
+        <h2>Your Sudoku</h2>
+        <div class="timer" id="userTimer">Timer: 00:00</div>
+        <table id="sudoku-user-grid"></table>
+        <button id="startBtn" onclick="startUserTimer()">Start Timer</button>
+        <button id="stopBtn" onclick="stopUserTimer()">Stop Timer</button>
+        <button id="checkResultBtn" onclick="checkResult()">Check Result</button>
+    </div>
+
+    <div id="results" class="result">
+        <div id="userResult"></div>
+        <div id="programResult"></div>
+        <div id="comparisonResult"></div>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
